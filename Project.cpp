@@ -1,5 +1,8 @@
 #include <stdlib.h>
-#inc
+#include <stdio.h>		 
+ #include <string>		
+ #include <iostream>		
+ #include <map>
 #include <ctime>
 
 
