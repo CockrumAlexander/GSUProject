@@ -5,14 +5,9 @@
 #include <map>
 #include <ctime>
 
-
-
-
 using namespace std;
 
-
 bool status;
-
 
 class directory{
 public:
@@ -28,9 +23,7 @@ public:
 	}
 };
 
-
 directory *curr;
-
 
 void mkfs(void){
     map<string,directory>root;
@@ -41,23 +34,18 @@ void mkfs(void){
 	cout<<"System has been formatted"<<endl;
 }
 
-
 void mkfl(string a){
     curr->files[curr->numfiles] = a;
     cout<<a<<" "<<curr->fcreated[curr->numfiles]<<endl;
     curr->numfiles++;
 }
 
-
 void name(string d){
 cout<<d<<endl;
 }
 
-
 void shell_loop(void){
 string input;
-
-
 string command;
 string parameter;
 	do{
@@ -90,24 +78,14 @@ string parameter;
 	}while(status = 1);
 }
 
-
-int main(){
+int main(){//initializes the shell loop 
 cout<<"Welcome to CSCI 3232 shell file system!\n";
-
 
 shell_loop();
 
-
 cout<<"bye"<<endl;
 
-
 return EXIT_SUCCESS;
-
-
-
-
-
-
 }
 
 
